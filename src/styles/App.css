@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ビューポートの高さに合わせる */
+  background-color: #f0f0f0; /* 背景色 */
+}
+
+h1 {
+  text-align: center; /* タイトルを中央に */
+}
+
+.game-container {
+  display: flex;
+  justify-content: center; /* 中央に配置 */
+  align-items: flex-start; /* 上に揃える */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* 8列のボード */
+  margin-right: 20px; /* 確率表示との間にスペースを追加 */
+}
+
+.probability-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 確率表示を中央に */
+}
+
+
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.observation-button {
+  margin-top: 20px;
+  padding: 15px 30px; /* ボタンのパディングを大きくする */
+  font-size: 18px; /* フォントサイズを大きくする */
+  cursor: pointer;
+  background-color: #4CAF50; /* 背景色 */
+  color: white; /* 文字色 */
+  border: none; /* ボーダーなし */
+  border-radius: 5px; /* 角を丸くする */
+  transition: background-color 0.3s; /* ホバー効果 */
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  text-align: center; /* テキストを中央揃え */
+  min-width: 150px; /* 最小幅を設定 */
+}
+
+.observation-button:hover {
+  background-color: #45a049; /* ホバー時の背景色 */
+}
